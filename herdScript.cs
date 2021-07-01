@@ -6,12 +6,13 @@ public class herdScript : MonoBehaviour
 {
     public GameObject llama;
     public static List<GameObject> llamas = new List<GameObject>();
-
+    //Define center of herd
     private float herdCenterx = 500;
     private float herdCenterz = 100;
 
     private void Start()
     {
+        //Spawn llamas with random positions. Each laama faces in a random direction
         int n = Random.Range(3, 7);
         for (int i = 0; i < n; i++)
         {
